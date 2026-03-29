@@ -1,0 +1,21 @@
+name: Global Knowledge Evolution
+
+on:
+  schedule:
+    - cron: '0 */7 * * *' # هذا الكود السحري يخبر السيرفر بالعمل كل 7 ساعات
+  push:
+    branches: [ main ] # يعمل أيضاً إذا قمت أنت برفع كود يدوياً
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install Rust
+        run: rustup update stable
+
+      - name: Self-Evolution & Knowledge Harvesting
+        run: |
+          rustc main.rs -o core
+          ./core

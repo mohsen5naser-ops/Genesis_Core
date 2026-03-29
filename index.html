@@ -1,0 +1,83 @@
+
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GENESIS CORE | Sovereign Interface</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Noto+Kufi+Arabic:wght@100;900&display=swap');
+            body { 
+                background: radial-gradient(circle at top right, #0f172a, #020617); 
+                color: #f8fafc; 
+                font-family: 'Noto Kufi Arabic', sans-serif;
+                overflow-x: hidden;
+            }
+            .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(56, 189, 248, 0.3); }
+            .neon-text { text-shadow: 0 0 15px rgba(56, 189, 248, 0.7); font-family: 'Orbitron', sans-serif; }
+            .pulse-blue { animation: pulse 2s infinite; box-shadow: 0 0 20px #3b82f6; }
+            @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.2); opacity: 0.6; } }
+            input::placeholder { color: rgba(56, 189, 248, 0.4); }
+        </style>
+    </head>
+    <body class="min-h-screen flex flex-col items-center p-4 md:p-12">
+        
+        <div class="flex items-center gap-3 mb-12 glass px-5 py-2 rounded-full">
+            <div class="w-3 h-3 bg-blue-500 rounded-full pulse-blue"></div>
+            <span class="text-xs font-black tracking-widest text-blue-400 uppercase">LIVE SYSTEM</span>
+        </div>
+
+        <header class="text-center mb-16">
+            <h1 class="text-6xl md:text-8xl font-black neon-text text-sky-400 mb-2 italic tracking-tighter">GENESIS CORE</h1>
+            <p class="text-slate-500 tracking-[0.5em] text-xs font-bold">نظام الإدارة الذاتية للمؤسسة</p>
+        </header>
+
+        <div class="w-full max-w-3xl mb-12 group">
+            <div class="glass p-1 rounded-3xl transition-all duration-500 group-hover:border-sky-400 group-hover:shadow-[0_0_30px_rgba(56,189,248,0.2)]">
+                <div class="bg-slate-950/90 rounded-[1.4rem] p-2 flex flex-col md:flex-row gap-2">
+                    <input type="text" placeholder="اطلب من الذكاء العالمي البحث، التحليل، أو تنفيذ أمر سيادي..." 
+                           class="bg-transparent w-full px-6 py-4 outline-none text-sky-200 text-lg">
+                    <button class="bg-sky-600 hover:bg-sky-400 text-white font-black px-10 py-4 rounded-2xl transition-all active:scale-95 shadow-lg">
+                        بـحث
+                    </button>
+                </div>
+            </div>
+            <p class="text-center text-[10px] text-slate-600 mt-4 italic font-mono uppercase tracking-widest">
+                Commander-Terminal Ready: Waiting for input...
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">
+            <div class="glass rounded-3xl p-8 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-sky-500"></div>
+                <h3 class="text-sky-500 text-xs font-black mb-4 uppercase tracking-widest">آخر اكتساح معرفي</h3>
+                <p class="text-xl font-bold leading-relaxed">Knowledge: | المصدر: أقوى تقنيات أمن سيبراني تحميك من الاختراق في 2026 | دليلك الشامل ... | الرابط: //duckduckgo.com/l/?uddg=https%3A%2F%2Feslamfahd.com%2Fcybersecurity%2Dtech%2D2026%2Dprotection%2F&rut=25b78be7ae8cc35f098092ae1de4fcdaa0734e77035df1724e238965c69fe7cd
+| المصدر: أبرز توجهات الأمن السيبراني في 2026 | Fyntralink | Fyntralink | الرابط: //duckduckgo.com/l/?uddg=https%3A%2F%2Ffyntralink.com%2Far%2Fblog%2Fcybersecurity%2Dtrends%2D2026%2F&rut=c18af0522d00dad8bde82b4dda6bd226eac435a3da6b6b1d843a3ab633f54f77
+| المصدر: اتجاهات الأمن السيبراني 2026 في الشرق الأوسط وأفريقيا | الرابط: //duckduckgo.com/l/?uddg=https%3A%2F%2Fsolutions.fixed.global%2Far%2Fnews%2Fai%2Dcybersecurity%2Dmiddle%2Deast%2Dafrica%2D2026%2Dar&rut=ffc4e267365351796b67084e61237764b2bd72f2ba1f61d3b67627284a95ad76</p>
+                <p class="text-[10px] text-slate-500 mt-4 font-mono">Timestamp: 1774796322</p>
+            </div>
+
+            <div class="glass rounded-3xl p-8 relative">
+                <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                <h3 class="text-blue-500 text-xs font-black mb-6 uppercase tracking-widest">حالة الحساسات القصوى</h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-slate-400 font-bold">حساس الوعي:</span>
+                        <span class="text-green-400">نشطة بنسبة 100%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                        <span class="text-slate-400 font-bold">مزامنة الشبكة:</span>
+                        <span class="text-blue-400">نشط</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-auto pt-20 text-slate-700 text-[10px] font-bold tracking-[0.3em] uppercase">
+            Genesis Institution | Autonomous Intelligence 2026 ©
+        </footer>
+
+    </body>
+    </html>
+    
